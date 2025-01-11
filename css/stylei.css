@@ -1,0 +1,724 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F3FF;
+    /* Light background */
+}
+
+.header-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1118px;
+    /* Fixed width */
+    height: 80px;
+    /* Fixed height */
+    background-color: rgba(222, 217, 250, 0.8);
+    /* Fill with 80% opacity */
+    margin: 0 auto;
+    /* Center horizontally */
+    padding: 0 20px;
+    /* Padding for left/right */
+    position: relative;
+    /* For positioning elements */
+}
+
+.logo {
+    width: 68px;
+    /* Set width */
+    height: 80px;
+    /* Set height */
+    border-radius: 50%;
+    /* Create an elliptical mask */
+    object-fit: cover;
+    /* Ensure the image covers the area */
+}
+
+.header-body div {
+    font-family: 'Bebas Neue', sans-serif;
+    /* Motto font */
+    font-size: 28px;
+    /* Motto font size */
+    letter-spacing: 0.1em;
+    /* 10% letter spacing */
+    color: #6D28D9;
+    /* Motto color */
+}
+
+.hamburger {
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    /* Stack lines vertically */
+    cursor: pointer;
+    /* Change cursor on hover */
+    padding: 30px;
+}
+
+.hamburger:hover {
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    /* Text shadow effect */
+}
+
+
+.line {
+    height: 5px;
+    /* Height of each line */
+    width: 50px;
+    /* Width of each line */
+    background-color: #6D28D9;
+    /* Color of lines */
+    margin: 4px 0;
+    /* Space between lines */
+}
+
+nav {
+    position: relative;
+}
+
+.sidebar {
+    display: flex;
+    list-style: none;
+}
+
+.sidebar li {
+    margin-left: 20px;
+    /* Space between menu items */
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* Button font */
+    color: white;
+    /* Text color */
+    background-color: #8B5CF6;
+    /* Inactive button fill */
+    width: 119px;
+    /* Set button width */
+    height: 44px;
+    /* Set button height */
+    border-radius: 10px;
+    /* Rounded corners */
+    display: flex;
+    /* Flexbox for centering text */
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    border: 2px solid transparent;
+    /* Default border */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Smooth transition */
+}
+
+/* Specific styles for the Home button */
+.sidebar li:first-child a {
+    background-color: #6D28D9;
+    /* Home button fill */
+}
+
+/* Hover effect for all buttons */
+.sidebar li a:hover {
+    background-color: #6D28D9;
+    /* Hover fill color for all buttons */
+}
+
+.sidebar a.active {
+    background-color: #7C3AED;
+    /* Active button fill */
+    border-color: transparent;
+    /* Change border for active state */
+}
+
+.close-button {
+    display: none;
+    position: absolute;
+    /* Absolute positioning */
+    top: 10px;
+    /* Same vertical position as hamburger */
+    padding: 25px 25px;
+    right: 10px;
+    /* Align to the right */
+    font-size: 80px;
+    /* Font size to match */
+    font-weight: bolder;
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    z-index: 2;
+    /* Above the sidebar items */
+
+}
+
+/* Additional styles for the close button */
+.close-button:hover {
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    /* Text shadow effect */
+}
+
+.home-main {
+    padding-top: 170px;
+    padding-bottom: 28px;
+    max-height: 100%;
+}
+
+.article {
+    width: 926px;
+    /* Fixed width for the article */
+    height: 399px;
+    /* Fixed height for the article */
+    display: flex;
+    /* Use flexbox for layout */
+    margin: 0 auto;
+    /* Center the article horizontally */
+    gap: 250px;
+    /* Gap between the compartments */
+
+
+}
+
+.article figure {
+    margin: 0;
+    /* Remove default margin */
+    width: 360px;
+    /* Fixed width for the figure */
+    height: 462px;
+    /* Fixed height for the figure */
+    display: flex;
+    /* Use flexbox */
+    flex-direction: column;
+    /* Stack elements vertically */
+}
+
+.article .hero-img {
+    width: 100%;
+    /* Make the image fill the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 15px;
+    /* Rounded corners for the image */
+
+}
+
+.article .Description-home-welcome {
+    width: 360px;
+    /* Fixed width for the description */
+    height: 399px;
+    /* Fixed height for the description */
+    display: flex;
+    /* Use flexbox layout */
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: flex-start;
+    /* Align items at the start */
+}
+
+.article h3 {
+    font-family: 'Manrope', sans-serif;
+    /* Header font */
+    font-weight: bold;
+    /* Bold font weight */
+    font-size: 36px;
+    /* Header font size */
+    color: #8B5CF6;
+    /* Header color */
+    margin-bottom: 10px;
+    /* Space below the heading */
+    text-align: center;
+    padding-top: 5px;
+}
+
+.article p {
+    font-family: 'Roboto', sans-serif;
+    /* Paragraph font */
+    font-weight: normal;
+    /* Regular font weight */
+    font-size: 16px;
+    /* Paragraph font size */
+    line-height: 150%;
+    /* Line height for readability */
+    color: #4C1D95;
+    /* Paragraph color */
+    margin-bottom: 20px;
+    /* Space below the paragraph */
+    width: 316px;
+    height: 157px;
+    padding: 35px 0;
+    align-items: center;
+}
+
+.article .contact-button {
+    display: inline-flex;
+    /* Flexbox for centering text */
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* Button font */
+    color: white;
+    /* Text color */
+    background-color: #8B5CF6;
+    /* Inactive button fill color */
+    width: 200px;
+    /* Set button width */
+    height: 44px;
+    /* Set button height */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: 2px solid transparent;
+    /* Default border */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Smooth transition */
+    margin-top: 20px;
+    /* Space above the button */
+    align-self: center;
+}
+
+/* Hover effect for the button */
+.article .contact-button:hover {
+    background-color: #6D28D9;
+    /* Keep the hover color the same as inactive */
+}
+
+.home-projects {
+    margin: 0 auto;
+    gap: 180px;
+    width: 950px;
+    /* Fixed width for the section */
+    height: 538px;
+    /* Fixed height for the section */
+    display: flex;
+    /* Flexbox for layout */
+    flex-direction: row;
+    /* Arrange items in a row */
+    justify-content: center;
+    /* Center align the section */
+    align-items: flex-start;
+    /* Align items at the start */
+
+
+}
+
+.item {
+    position: relative;
+    /* Required for absolute positioning of the overlay */
+    border-radius: 12px;
+    overflow: hidden;
+    /* Ensure content fits within the border */
+}
+
+.Description {
+    flex: 1;
+    /* Allow this section to grow */
+    margin-right: 20px;
+    /* Space between description and project preview */
+}
+
+.Description h1 a {
+    font-family: 'Manrope', sans-serif;
+    /* Header font */
+    font-weight: bold;
+    /* Bold font weight */
+    font-size: 36px;
+    /* Header font size */
+    color: #8B5CF6;
+    /* Header color */
+    margin-bottom: 10px;
+    /* Space below the heading */
+    align-self: center;
+    text-decoration: none;
+}
+
+.Description p {
+    padding-top: 58px;
+    align-self: center;
+    width: 325px;
+    height: 223px;
+    font-family: 'Roboto', sans-serif;
+    /* Paragraph font */
+    font-weight: normal;
+    /* Regular font weight */
+    font-size: 16px;
+    /* Paragraph font size */
+    line-height: 150%;
+    /* Line height for readability */
+    color: #4C1D95;
+    /* Paragraph color */
+}
+
+.Projects-Preview {
+    display: grid;
+    /* Use grid for images */
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns for images */
+    gap: 24px;
+    /* Vertical gap between items */
+    flex-grow: 1;
+    /* Allow this section to grow */
+
+}
+
+.Projects-Preview img {
+    width: 100%;
+    /* Make image fill the item width */
+    height: 194px;
+    /* Set height for the image */
+    display: block;
+    /* Remove gap below image */
+}
+
+.ProjectDp {
+    position: absolute;
+    /* Position description over the image */
+    bottom: 0;
+    /* Align to the bottom */
+    left: 0;
+    /* Align to the left */
+    right: 0;
+    /* Align to the right */
+    background-color: rgba(196, 181, 253, 0.9);
+    /* Slight transparency */
+    padding: 20px;
+    /* Adjusted padding */
+    color: #4C1D95;
+    /* Text color */
+    display: flex;
+    /* Flexbox for layout */
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: flex-start;
+    /* Align items at the start */
+    width: 100%;
+    /* Match width of the item */
+    transform: translateY(100%);
+    /* Initially hide the overlay */
+    transition: transform 0.3s ease;
+    /* Smooth transition for sliding effect */
+}
+
+.item:hover .ProjectDp {
+    transform: translateY(0);
+    /* Slide in overlay on hover */
+}
+
+.ProjectDp h3 {
+    font-family: 'Barlow', sans-serif;
+    /* Header font */
+    font-weight: 600;
+    /* SemiBold weight */
+    font-size: 16px;
+    /* Adjusted header font size */
+    color: #6D28D8;
+    /* Header color */
+    margin: 0;
+    /* Remove default margin */
+    text-align: left;
+    /* Align text to the left */
+    padding-bottom: 5px;
+}
+
+.ProjectDp p {
+    font-family: 'Roboto', sans-serif;
+    /* Paragraph font */
+    font-weight: normal;
+    /* Regular font weight */
+    font-size: 12px;
+    /* Adjusted paragraph font size */
+    color: #4C1D95;
+    /* Paragraph color */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.Contacts-footer {
+    margin: 0 auto;
+    background-color: #DED9FA;
+    /* Light fill color */
+    width: 100%;
+    /* Full width for responsiveness */
+    max-width: 1107px;
+    /* Max width */
+    height: auto;
+    /* Auto height */
+    padding: 10px 20px;
+    /* Padding for spacing */
+    display: flex;
+    /* Flexbox for layout */
+    flex-direction: row;
+    /* Arrange items horizontally */
+    justify-content: space-between;
+    /* Space items evenly */
+    align-items: center;
+    /* Center items vertically */
+    font-family: 'Roboto Slab', sans-serif;
+    /* Font for the footer */
+}
+
+.copy-right p,
+.minimotto p {
+    color: #5B21B6;
+    /* Text color */
+    font-size: 15px;
+    /* Font size */
+    line-height: 100%;
+    /* Line height */
+    margin: 0;
+    /* Remove default margin */
+    text-align: center;
+    /* Center align text */
+}
+
+.socials {
+    display: flex;
+    /* Flexbox for social icons */
+    gap: 20px;
+    /* Space between icons */
+}
+
+.socials img {
+    width: 40px;
+    /* Fixed width for social icons */
+    height: auto;
+    /* Maintain aspect ratio */
+    transition: transform 0.3s;
+    /* Transition for hover effect */
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge icons on hover */
+}
+
+/* Media Query for responsive navigation */
+@media (max-width: 834px) {
+    .header-body {
+        max-width: 100%;
+        flex-direction: row;
+        /* Stack elements vertically */
+        height: auto;
+        /* Allow height to adjust */
+        padding: 10px;
+        /* Adjust padding */
+        height: 55px;
+
+    }
+
+    .header-body div {
+        font-size: 24px;
+        /* Adjust font size for better visibility */
+        margin: 10px 0;
+        /* Space around the title */
+    }
+
+    .hamburger {
+        display: flex;
+        /* Show hamburger menu */
+        margin-right: 100px;
+    }
+
+    .nav-menu {
+        display: none;
+        /* Hide the menu by default */
+        position: fixed;
+        /* Fix position to stay on screen */
+        top: 0;
+        /* Align to the top */
+        right: 0;
+        /* Align to the right */
+        width: 50%;
+        /* Take up half of the screen width */
+        height: 100vh;
+        /* Full height of the viewport */
+        background-color: #F5F3FF;
+        /* Background color */
+        z-index: 1;
+        /* On top of other elements */
+        transition: transform 0.3s ease;
+        /* Sliding effect */
+        transform: translateX(100%);
+        /* Start hidden (off-screen) */
+    }
+
+    .nav-menu.active {
+        display: block;
+        /* Show menu when active */
+        transform: translateX(0);
+        /* Slide in from right */
+    }
+
+    .close-button {
+        display: block;
+        position: absolute;
+        /* Absolute positioning */
+        top: 10px;
+        /* Same vertical position as hamburger */
+        right: 10px;
+        /* Align to the right */
+        font-size: 24px;
+        /* Font size to match */
+        color: white;
+        /* Text color */
+        cursor: pointer;
+        /* Pointer cursor on hover */
+        z-index: 2;
+        /* Above the sidebar items */
+    }
+
+    /* Additional styles for the close button */
+
+
+    .sidebar {
+        display: flex;
+        /* Use flexbox for layout */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        /* Align items to the start */
+        padding: 20px;
+        /* Add padding for better spacing */
+        height: 100%;
+        /* Make sidebar full height */
+    }
+
+    .sidebar li {
+        margin: 10px 0;
+        /* Space between menu items */
+        width: 100%;
+        /* Full width for buttons */
+        align-items: center;
+    }
+
+    .sidebar a {
+        text-align: left;
+        /* Align text to the left */
+        padding: 10px;
+        /* Add padding for better touch area */
+        color: white;
+        /* Text color */
+        background-color: #8B5CF6;
+        /* Inactive button fill */
+        border-radius: 12px;
+        /* Rounded corners */
+        transition: background-color 0.3s;
+        /* Smooth transition */
+
+    }
+
+    /* Hover effect for buttons */
+    .sidebar a:hover {
+        background-color: #6D28D9;
+        /* Hover fill color */
+    }
+
+    .home-main {
+
+        padding-top: 50px;
+    }
+
+    .article {
+        display: block;
+        /* Stack compartments vertically */
+        align-items: center;
+        /* Center align items */
+        height: auto;
+        /* Allow height to adjust automatically */
+        padding-top: 10px;
+    }
+
+    .article figure,
+    .article .Description-home-welcome {
+        display: block;
+        /* Change display to block */
+        align-self: center;
+        width: 40%;
+        padding-left: 50px;
+
+
+    }
+
+    .article .hero-img {
+        width: 100%;
+        /* Ensure the image fills the width */
+        height: auto;
+        /* Maintain aspect ratio */
+        transform: scale(0.9);
+
+    }
+
+    .article h3,
+    .article p {
+
+        text-align: start;
+    }
+
+    .home-projects {
+        display: block;
+
+    }
+
+    .home-projects .Description,
+    .home-projects .Projects-Preview {
+
+        padding-left: 50px;
+
+
+    }
+
+    .Projects-Preview {
+        display: block;
+        width: 30%;
+        padding: 0px 130px;
+    }
+
+    .Projects-Preview .item {
+        margin-bottom: 20px;
+
+    }
+
+    .Contacts-footer {
+        padding: 10px;
+        /* Reduce padding on smaller screens */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+
+        margin-top: 700px;
+    }
+
+    .minimotto {
+        display: none;
+    }
+
+    .copy-right {
+        margin-bottom: 20px;
+        /* Space between copyright and socials */
+    }
+
+    .socials {
+        justify-content: center;
+        /* Center social icons */
+        gap: 12px;
+        /* Adjust gap for smaller screens */
+    }
+
+    .socials img {
+        width: 30px;
+        /* Smaller icon size for mobile */
+
+    }
+
+    .copy-right p {
+        font-size: 13px;
+        /* Slightly smaller font size */
+    }
+
+}

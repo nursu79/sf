@@ -1,108 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylecv.css">
 </head>
+
 <body class="CV-body">
-    <header class="header-body">
-        <div><img src="src/images/Screenshot-2024-11-24-203638.png" alt="My-logo" width="100"></div>
+    <header class="contact-header">
+        <div>
+            <img class="logo" src="src/images/Logo.svg" alt="My-logo" width="100">
+        </div>
         <div>Pixels and Passion</div>
-        <nav>
-            <label class="hamburger-menu" ><input type="checkbox"></label>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <div class="close-button" id="close-button">✖</div>
             <ul class="sidebar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="CV.html">Cv</a></li>
+                <li><a href="CV.html">CV</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="About-Me.html">About.me</a></li>
+                <li><a href="About-Me.html">About Me</a></li>
             </ul>
         </nav>
     </header>
+
+
 
     <main class="CV-main">
 
         <section class="CV-ED-section">
             <h1>EDucation & CV</h1>
-       
-            <div class="Cv & transcipt">
-                <div class="Cv">
-                <p>Here is an overview of my Cv</p>
-                <iframe src="src/pdf-file/Sumeya-Ibrahim-Issa-Resume.pdf"  width="400" height="400" ></iframe>
-                
-                </div >
+
+            <div class="Cv_T">
+                <div class="Cvs">
+                    <div>
+                        <p>Here is an overview of my Cv</p>
+                    </div>
+                    <iframe src="src/pdf-file/Sumeya-Ibrahim-Issa-Resume.pdf" width="400" height="400"></iframe>
+
+                </div>
                 <div class="Recommendation-letter">
                     <p>This is a Reccomendation letter from my previous high-school teacher</p>
                     <picture>
-                        <img src="src/images/photo_2024-11-24_10-52-42.jpg" alt="Recommendation-letter" width="400" height="400">
+                        <img src="src/images/photo_2024-11-24_10-52-42.jpg" alt="Recommendation-letter" width="400"
+                            height="400">
                     </picture>
-    
+
                 </div>
 
-                
+
             </div>
-            
-            <div>
+
+            <div class="ED_C_P">
                 <div class="current-ed">
-                    <p>I am currently studying to finish my bachelors degree of Software Engineering at the Addis Abeba Institute of Technology. I am a 3rd year student now with two years left to finish my degree</p>
-                <iframe src="src/pdf-file/Document1.pdf" width="400" height="400"></iframe>
+                    <div>
+                        <p>3rd year <br>BsCh of Software Engineering AAU</p>
+                    </div>
+                    <iframe src="src/pdf-file/Document1.pdf" width="400" height="400"></iframe>
                 </div>
                 <div class="previous-ed">
-                    <p>This is my highschool transcipt. I finished highscool in my home-town jimma at SOS HGS Secondary School</p>
-                    <picture><img src="src/images/photo_2024-11-24_10-39-11.jpg" alt="Highschool-transcript" width="400" height="400"> </picture>
-                
-                </div>
-                
-                
-            </div>
-       
-        
-        </section>
+                    <p>Highschool Transcript</p>
+                    <picture><img src="src/images/photo_2024-11-24_10-39-11.jpg" alt="Highschool-transcript" width="400"
+                            height="400"> </picture>
 
-       
-        
-        <section class="Skills-section">
+                </div>
 
-            <div>
-                <h1>My Skills</h1>
-                <p>As a web developer, I am proficient in HTML, CSS, and JavaScript, the building blocks of the web. I am skilled in utilizing frameworks like React to efficiently build complex, user-friendly web applications. I am passionate about creating responsive and accessible designs that provide seamless user experiences across various devices.</p>
-    
+
             </div>
-            <div class="CV-skill-container">
-                <div class="skill skill-1 ">
-                    <img src="src/images/Skills/HTML5_Badge.svg" alt="HTML Icon" width="300">
-                    <p>HTML</p>
-                </div>
-                <div class="skill skill-2">
-                    <img src="src/images/Skills/CSS3_logo_and_wordmark.svg" alt="CSS Icon" width="300">
-                    <p>CSS</p>
-                </div>
-                <div class="skill skill-3">
-                    <img src="src/images/Skills/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Icon" width="300">
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill skill-4">
-                    <img src="src/images/Skills/React_Logo_SVG.svg" alt="React" width="300">
-                    <p>React</p>
-                </div>
-            </div>
+
 
         </section>
-       
+
+
+        <section class="home-projects">
+            <div class="Description">
+                <div>
+                    <h1><a href="#">MY SKills</a></h1>
+                </div>
+                <div>
+                    <p>As a web developer, I am proficient in HTML, CSS, and JavaScript, the building blocks of the web.
+                        I am skilled in utilizing frameworks like React to efficiently build complex, user-friendly web
+                        applications.
+                        <br><br>
+                        I am passionate about creating responsive and accessible designs that provide seamless user
+                        experiences across various devices.
+                    </p>
+                </div>
+            </div>
+
+            <div class="Projects-Preview">
+                <div class="item">
+                    <a href="projects.html">
+                        <picture><img src="src\images\Skills\HTML5_Badge 1.png" alt="project-1" width="300"></picture>
+                    </a>
+                    <div class="ProjectDp">
+                        <h3>HTML</h3>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <picture><img src="src\images\Skills\CSS3_logo_and_wordmark 2.png" alt="project-2" width="300">
+                        </picture>
+                    </a>
+                    <div class="ProjectDp">
+                        <h3>CSS</h3>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <picture><img src="src\images\Skills\Unofficial_JavaScript_logo_2 1.png" alt="project-3"
+                                width="300"></picture>
+                    </a>
+                    <div class="ProjectDp">
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <picture><img src="src\images\Skills\React_Logo_SVG 1.png" alt="project-4" width="300">
+                        </picture>
+                    </a>
+                    <div class="ProjectDp">
+                        <h3>React</h3>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
     </main>
 
-      
-    <footer class="CV-footer">
+    <footer class="Contacts-footer">
         <div class="copy-right">
-            <p>&copy;  2024 Made by Sumeya Ibrahim. All rights reserved.</p>
+            <p>&copy; 2024 Made by Sumeya Ibrahim. All rights reserved.</p>
         </div>
-        <div><h4>Made with <span>Love</span></h4></div>
+        <div class="minimotto">
+            <p>Made with Love</p>
+        </div>
         <div class="socials">
-            <div><a href="https://www.linkedin.com/in/sumeya-issa-6ba350339?trk=contact-inf"><img src="src/images/ICons/linkedin-box-fill.svg" alt="Linkiden" width="100"></a></div>
-            <div><a href="https://www.instagram.com/poetic4_life/profilecard/?igsh=cnZqMHR1bWExaTRt"><img src="src/images/ICons/instagram-line.svg" alt="Instagram"  width="100"></a></div>
-            <div><a href="https://www.threads.net/@poetic4_life"><img src="src/images/ICons/twitter-line.svg" alt="Twitter"  width="100"></a></div>
-            <div><a href="https://t.me/poetic4life"><img src="src/images/ICons/telegram-line.svg" alt="Telegram"  width="100"></a></div>
+            <div><a href="https://www.linkedin.com/in/sumeya-issa-6ba350339?trk=contact-inf"><img
+                        src="src/images/ICons/linkedin-box-fill.svg" alt="Linkiden" width="100"></a></div>
+            <div><a href="https://www.instagram.com/poetic4_life/profilecard/?igsh=cnZqMHR1bWExaTRt"><img
+                        src="src/images/ICons/instagram-line.svg" alt="Instagram" width="100"></a></div>
+            <div><a href="https://www.threads.net/@poetic4_life"><img src="src/images/ICons/twitter-line.svg"
+                        alt="Twitter" width="100"></a></div>
+            <div><a href="https://t.me/poetic4life"><img src="src/images/ICons/telegram-line.svg" alt="Telegram"
+                        width="100"></a></div>
         </div>
     </footer>
+
+
+
+    <script src="js/scriptcv.js"></script>
 </body>
+
 </html>

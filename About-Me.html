@@ -1,78 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About.ME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js/scriptc.js">
 </head>
+
 <body>
-    <header class="about-body">
-        <div><img src="src/images/Screenshot-2024-11-24-203638.png" alt="My-logo" width="100"></div>
+
+    <header class="about-header">
+        <div>
+            <img class="logo" src="src/images/Logo.svg" alt="My-logo" width="100">
+        </div>
         <div>Pixels and Passion</div>
-        <nav>
-            <label class="hamburger-menu" ><input type="checkbox"></label>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <div class="close-button" id="close-button">✖</div>
             <ul class="sidebar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="CV.html">Cv</a></li>
+                <li><a href="CV.html">CV</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="About-Me.html">About.me</a></li>
+                <li><a href="About-Me.html">About Me</a></li>
             </ul>
         </nav>
     </header>
     <main class="about-main">
-        <article class="about-main-article">
-            <div>
-                <h1>About Me</h1>
-                <p>I’m Sumeya Ibrahim, a passionate web developer with a keen eye for design and a knack for crafting intuitive user experiences. With a strong foundation in HTML, CSS, and JavaScript, I specialize in creating responsive and engaging websites that leave a lasting impression. I’m dedicated to staying up-to-date with the latest web technologies to deliver cutting-edge solutions. Let’s collaborate to bring your digital vision to life.</p>
-            </div>
-            <div class="about-hero-image">
-                <figure><img src="src/images/Hero-Image-min.jpg" alt="my image" width="200">
-                <figcaption>profile image</figcaption>
-                </figure>
-            </div>
-        </article>
-    
-        <article  class="about-main-hobbies">
-             <div class="hobbies-description">
-                <h2>My hobbies</h2>
-                <p>When I'm not immersed in the world of code, I enjoy exploring the great outdoors on hiking trails. I find solace in the quiet moments, often channeling my thoughts into poetic verses. Volunteering allows me to give back to the community and connect with people from diverse backgrounds. And, to quench my thirst for knowledge, I spend my evenings delving into thought-provoking documentaries.
-                </p>
+
+        <article class="article">
+
+            <div class="Description-home-welcome">
+                <h3>About me</h3>
+                <p>I’m Sumeya Ibrahim, a passionate web developer with a keen eye for design and a knack for crafting
+                    intuitive user experiences. With a strong foundation in HTML, CSS, and JavaScript, I specialize in
+                    creating responsive and engaging websites that leave a lasting impression.<br> <br> I’m dedicated to
+                    staying up-to-date with the latest web technologies to deliver cutting-edge solutions. Let’s
+                    collaborate to bring your digital vision to life.</p>
+
             </div>
 
+            <figure>
+                <img src="src/images/About image.svg" alt="Hero-image" class="hero-img">
+
+            </figure>
+
+
+
+        </article>
+        <section class="about-main-hobbies">
+            <div class="hobbies-description">
+                <h3>My hobbies</h3>
+                <p>When I'm not immersed in the world of code, I enjoy exploring the great outdoors on hiking trails.I
+                    find solace in the quiet moments, often channeling my thoughts into poetic verses.<br> <br>
+                    Volunteering allows me to give back to the community and connect with people from diverse
+                    backgrounds. And, to quench my thirst for knowledge, I spend my evenings delving into
+                    thought-provoking documentaries.
+                </p>
+            </div>
 
             <div class="Hobbies-vid-image">
                 <figure class="hobbies-image">
                     <img src="src/images/Projects-pictures/pexels-rdne-6647066-min.jpg" alt="Volunteering" width="300">
-                    <img src="src/images/Projects-pictures/pexels-esrakorkmaz-15365473-min.jpg" alt="Poem-Writing" width="300">
+                    <img src="src/images/Projects-pictures/pexels-esrakorkmaz-15365473-min.jpg" alt="Poem-Writing"
+                        width="300">
                     <figcaption> Volunteering & Poetry</figcaption>
-                </figure >
+                </figure>
                 <figure class="hobbies-videos">
-                    <video src="src/videos/waterfall-hiking.mp4" controls autoplay loop muted class="Hiking" width="300"></video>
-                    <video src="src/videos/the-social-dilemma-2020-tristan-harris-documentry-thesocialdilemma-socialmedi_G26fQxS1.mp4" controls autoplay loop muted Class="Movies" width="300"></video>
+                    <video src="src/videos/waterfall-hiking.mp4" controls autoplay loop muted class="Hiking"
+                        width="300"></video>
+                    <video
+                        src="src/videos/the-social-dilemma-2020-tristan-harris-documentry-thesocialdilemma-socialmedi_G26fQxS1.mp4"
+                        controls autoplay loop muted Class="Movies" width="300"></video>
                     <figcaption>Hiking & documentaries</figcaption>
                 </figure>
-                
+
             </div>
-        </article>
-    
+        </section>
+
     </main>
 
-    <footer class="about-footer">
+
+    <footer class="Contacts-footer">
         <div class="copy-right">
-            <p>&copy;  2024 Made by Sumeya Ibrahim. All rights reserved.</p>
+            <p>&copy; 2024 Made by Sumeya Ibrahim. All rights reserved.</p>
         </div>
-        <div class="ideas"><h4>Made with <span>Love</span></h4></div>
+        <div class="minimotto">
+            <p>Made with Love</p>
+        </div>
         <div class="socials">
-            <div><a href="https://www.linkedin.com/in/sumeya-issa-6ba350339?trk=contact-inf"><img src="src/images/ICons/linkedin-box-fill.svg" alt="Linkiden" width="100"></a></div>
-            <div><a href="https://www.instagram.com/poetic4_life/profilecard/?igsh=cnZqMHR1bWExaTRt"><img src="src/images/ICons/instagram-line.svg" alt="Instagram"  width="100"></a></div>
-            <div><a href="https://www.threads.net/@poetic4_life"><img src="src/images/ICons/twitter-line.svg" alt="Twitter"  width="100"></a></div>
-            <div><a href="https://t.me/poetic4life"><img src="src/images/ICons/telegram-line.svg" alt="Telegram"  width="100"></a></div>
+            <div><a href="https://www.linkedin.com/in/sumeya-issa-6ba350339?trk=contact-inf"><img
+                        src="src/images/ICons/linkedin-box-fill.svg" alt="Linkiden" width="100"></a></div>
+            <div><a href="https://www.instagram.com/poetic4_life/profilecard/?igsh=cnZqMHR1bWExaTRt"><img
+                        src="src/images/ICons/instagram-line.svg" alt="Instagram" width="100"></a></div>
+            <div><a href="https://www.threads.net/@poetic4_life"><img src="src/images/ICons/twitter-line.svg"
+                        alt="Twitter" width="100"></a></div>
+            <div><a href="https://t.me/poetic4life"><img src="src/images/ICons/telegram-line.svg" alt="Telegram"
+                        width="100"></a></div>
         </div>
     </footer>
 
-    
 
-
-
+    <script src="js/scripta.js"></script>
 </body>
+
 </html>

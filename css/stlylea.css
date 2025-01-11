@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F3FF;
+    /* Light background */
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1107px;
+    /* Fixed width */
+    height: 80px;
+    /* Fixed height */
+    background-color: rgba(222, 217, 250, 0.8);
+    /* Fill with 80% opacity */
+    margin: 0 auto;
+    /* Center horizontally */
+    position: relative;
+    /* For positioning elements */
+}
+
+.logo {
+    width: 68px;
+    /* Set width */
+    height: 80px;
+    /* Set height */
+    border-radius: 50%;
+    /* Create an elliptical mask */
+    object-fit: cover;
+    /* Ensure the image covers the area */
+}
+
+.about-header div {
+    font-family: 'Bebas Neue', sans-serif;
+    /* Motto font */
+    font-size: 28px;
+    /* Motto font size */
+    letter-spacing: 0.1em;
+    /* 10% letter spacing */
+    color: #6D28D9;
+
+    /* Motto color */
+}
+
+.hamburger {
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    /* Stack lines vertically */
+    cursor: pointer;
+    /* Change cursor on hover */
+    padding: 30px;
+}
+
+.hamburger:hover {
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    /* Text shadow effect */
+}
+
+.line {
+    height: 5px;
+    /* Height of each line */
+    width: 50px;
+    /* Width of each line */
+    background-color: #6D28D9;
+    /* Color of lines */
+    margin: 4px 0;
+    /* Space between lines */
+}
+
+nav {
+    position: relative;
+}
+
+.sidebar {
+    display: flex;
+    list-style: none;
+}
+
+.sidebar li {
+    margin-left: 20px;
+    /* Space between menu items */
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* Button font */
+    color: white;
+    /* Text color */
+    background-color: #8B5CF6;
+    /* Inactive button fill */
+    width: 119px;
+    /* Set button width */
+    height: 44px;
+    /* Set button height */
+    border-radius: 10px;
+    /* Rounded corners */
+    display: flex;
+    /* Flexbox for centering text */
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    border: 2px solid transparent;
+    /* Default border */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Smooth transition */
+}
+
+
+
+/* Hover effect for all buttons */
+.sidebar li a:hover {
+    background-color: #6D28D9;
+    /* Hover fill color for all buttons */
+}
+
+.sidebar li:nth-child(4) a {
+    background-color: #6D28D9;
+    /* Home button fill */
+}
+
+
+
+.close-button {
+    display: none;
+    position: absolute;
+    /* Absolute positioning */
+    top: 10px;
+    /* Same vertical position as hamburger */
+    padding: 25px 25px;
+    right: 10px;
+    /* Align to the right */
+    font-size: 80px;
+    /* Font size to match */
+    font-weight: bolder;
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    z-index: 2;
+    /* Above the sidebar items */
+}
+
+.close-button:hover {
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    /* Text shadow effect */
+}
+
+.home-main {
+    padding-top: 170px;
+    padding-bottom: 28px;
+    max-height: 100%;
+    margin-bottom: 111px;
+}
+
+.article {
+    width: 926px;
+    /* Fixed width for the article */
+    height: 399px;
+    /* Fixed height for the article */
+    display: flex;
+    /* Use flexbox for layout */
+    margin: 0 auto;
+    /* Center the article horizontally */
+    gap: 250px;
+    /* Gap between the compartments */
+
+    padding-top: 110px;
+
+
+}
+
+.article figure {
+    margin: 0;
+    /* Remove default margin */
+    width: 360px;
+    /* Fixed width for the figure */
+    height: 462px;
+    /* Fixed height for the figure */
+    display: flex;
+    /* Use flexbox */
+    flex-direction: column;
+    /* Stack elements vertically */
+}
+
+.article .hero-img {
+    width: 100%;
+    /* Make the image fill the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 15px;
+    /* Rounded corners for the image */
+    padding: 20px;
+
+}
+
+.article .Description-home-welcome {
+    width: 424px;
+    /* Fixed width for the description */
+    height: 519px;
+    /* Fixed height for the description */
+    display: flex;
+    /* Use flexbox layout */
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: flex-start;
+    /* Align items at the start */
+}
+
+.article h3 {
+    font-family: 'Manrope', sans-serif;
+    /* Header font */
+    font-weight: bold;
+    /* Bold font weight */
+    font-size: 36px;
+    /* Header font size */
+    color: #8B5CF6;
+    /* Header color */
+    margin-bottom: 10px;
+    /* Space below the heading */
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.article p {
+    font-family: 'Roboto', sans-serif;
+    /* Paragraph font */
+    font-weight: normal;
+    /* Regular font weight */
+    font-size: 16px;
+    /* Paragraph font size */
+    line-height: 150%;
+    /* Line height for readability */
+    color: #4C1D95;
+    /* Paragraph color */
+    margin-bottom: 20px;
+    /* Space below the paragraph */
+    width: 393px;
+    height: 328px;
+    padding: 35px 0;
+    align-items: center;
+}
+
+section {
+
+    width: 926px;
+    /* Fixed width for the article */
+    height: 399px;
+    /* Fixed height for the article */
+    display: flex;
+    /* Use flexbox for layout */
+    margin: 0 auto;
+    /* Center the article horizontally */
+    gap: 170px;
+    /* Gap between the compartments */
+
+    padding-top: 50px;
+
+
+}
+
+section .hobbies-description {
+
+    width: 424px;
+    /* Fixed width for the description */
+    height: 519px;
+    /* Fixed height for the description */
+    display: flex;
+    /* Use flexbox layout */
+    flex-direction: column;
+    /* Stack elements vertically */
+    justify-content: flex-start;
+    margin-top: 60px;
+}
+
+section h3 {
+
+    font-family: 'Manrope', sans-serif;
+    /* Header font */
+    font-weight: bold;
+    /* Bold font weight */
+    font-size: 36px;
+    /* Header font size */
+    color: #8B5CF6;
+    /* Header color */
+    margin-bottom: 10px;
+    /* Space below the heading */
+    padding-left: 15px;
+    padding-top: 5px;
+
+}
+
+section p {
+
+    font-family: 'Roboto', sans-serif;
+    /* Paragraph font */
+    font-weight: normal;
+    /* Regular font weight */
+    font-size: 16px;
+    /* Paragraph font size */
+    line-height: 150%;
+    /* Line height for readability */
+    color: #4C1D95;
+    /* Paragraph color */
+    margin-bottom: 20px;
+    /* Space below the paragraph */
+    width: 393px;
+    height: 328px;
+    padding: 35px 0;
+    align-items: center;
+
+}
+
+.Hobbies-vid-image {
+    width: 440px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 212px);
+    gap: 19px 16px;
+    /* vertical horizontal */
+
+    gap: 2px;
+}
+
+.hobbies-image,
+.hobbies-videos {
+    display: contents;
+}
+
+.hobbies-image img {
+    width: 212px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.hobbies-videos {
+    display: grid;
+    grid-template-columns: repeat(2, 212px);
+    /* Match the container columns */
+    gap: 0 16px;
+    /* Keep the same horizontal gap as images */
+    justify-content: space-between;
+}
+
+
+
+
+
+.hobbies-videos video {
+    width: 212px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.hobbies-image img:hover,
+.hobbies-videos video:hover {
+    transform: scale(1.05);
+}
+
+.hobbies-image figcaption,
+.hobbies-videos figcaption {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 10px;
+    color: #4C1D95;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+
+.Contacts-footer {
+    margin: 0 auto;
+    background-color: #DED9FA;
+    /* Light fill color */
+    width: 100%;
+    /* Full width for responsiveness */
+    max-width: 1107px;
+    /* Max width */
+    height: auto;
+    /* Auto height */
+    padding: 10px 20px;
+    /* Padding for spacing */
+    display: flex;
+    /* Flexbox for layout */
+    flex-direction: row;
+    /* Arrange items horizontally */
+    justify-content: space-between;
+    /* Space items evenly */
+    align-items: center;
+    /* Center items vertically */
+    font-family: 'Roboto Slab', sans-serif;
+    /* Font for the footer */
+
+    margin-top: 200px;
+}
+
+.copy-right p,
+.minimotto p {
+    color: #5B21B6;
+    /* Text color */
+    font-size: 15px;
+    /* Font size */
+    line-height: 100%;
+    /* Line height */
+    margin: 0;
+    /* Remove default margin */
+    text-align: center;
+    /* Center align text */
+}
+
+.socials {
+    display: flex;
+    /* Flexbox for social icons */
+    gap: 20px;
+    /* Space between icons */
+}
+
+.socials img {
+    width: 40px;
+    /* Fixed width for social icons */
+    height: auto;
+    /* Maintain aspect ratio */
+    transition: transform 0.3s;
+    /* Transition for hover effect */
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge icons on hover */
+}
+
+@media (max-width: 834px) {
+    .about-header {
+        max-width: 100%;
+        flex-direction: row;
+        /* Stack elements vertically */
+        height: auto;
+        /* Allow height to adjust */
+        padding: 10px;
+        /* Adjust padding */
+        height: 55px;
+    }
+
+    .about-header div {
+        font-size: 24px;
+        /* Adjust font size for better visibility */
+        margin: 10px 0;
+        /* Space around the title */
+    }
+
+    .hamburger {
+        display: flex;
+        /* Show hamburger menu */
+        margin-right: 100px;
+    }
+
+    .nav-menu {
+        display: none;
+        /* Hide the menu by default */
+        position: fixed;
+        /* Fix position to stay on screen */
+        top: 0;
+        /* Align to the top */
+        right: 0;
+        /* Align to the right */
+        width: 50%;
+        /* Take up half of the screen width */
+        height: 100vh;
+        /* Full height of the viewport */
+        background-color: #F5F3FF;
+        /* Background color */
+        z-index: 1;
+        /* On top of other elements */
+        transition: transform 0.3s ease;
+        /* Sliding effect */
+        transform: translateX(100%);
+        /* Start hidden (off-screen) */
+    }
+
+    .nav-menu.active {
+        display: block;
+        /* Show menu when active */
+        transform: translateX(0);
+        /* Slide in from right */
+    }
+
+    .close-button {
+        display: block;
+        position: absolute;
+        /* Absolute positioning */
+        top: 10px;
+        /* Same vertical position as hamburger */
+        right: 10px;
+        /* Align to the right */
+        font-size: 24px;
+        /* Font size to match */
+        color: white;
+        /* Text color */
+        cursor: pointer;
+        /* Pointer cursor on hover */
+        z-index: 2;
+        /* Above the sidebar items */
+    }
+
+    .sidebar {
+        display: flex;
+        /* Use flexbox for layout */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        /* Align items to the start */
+        padding: 20px;
+        /* Add padding for better spacing */
+        height: 100%;
+        /* Make sidebar full height */
+    }
+
+    .sidebar li {
+        margin: 10px 0;
+        /* Space between menu items */
+        width: 100%;
+        /* Full width for buttons */
+        align-items: center;
+    }
+
+    .sidebar a {
+        text-align: left;
+        /* Align text to the left */
+        padding: 10px;
+        /* Add padding for better touch area */
+        color: white;
+        /* Text color */
+        background-color: #8B5CF6;
+        /* Inactive button fill */
+        border-radius: 12px;
+        /* Rounded corners */
+        transition: background-color 0.3s;
+        /* Smooth transition */
+    }
+
+    /* Hover effect for buttons */
+    .sidebar a:hover {
+        background-color: #6D28D9;
+        /* Hover fill color */
+    }
+
+
+
+    .article {
+        display: block;
+        /* Stack compartments vertically */
+        align-items: center;
+        /* Center align items */
+        height: auto;
+        /* Allow height to adjust automatically */
+        padding-top: 50px;
+    }
+
+    .article figure,
+    .article .Description-home-welcome {
+        display: block;
+        /* Change display to block */
+        align-self: center;
+        width: 40%;
+        padding-left: 50px;
+
+
+    }
+
+    .article .hero-img {
+        width: 100%;
+        /* Ensure the image fills the width */
+        height: auto;
+        /* Maintain aspect ratio */
+        transform: scale(0.9);
+
+    }
+
+    .article h3,
+    .article p {
+
+        text-align: start;
+    }
+
+    section {
+
+        display: block;
+        padding-left: 50px;
+    }
+
+    .Contacts-footer {
+        padding: 10px;
+        /* Reduce padding on smaller screens */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+
+        margin-top: 800px;
+    }
+
+    .minimotto {
+        display: none;
+    }
+
+    .copy-right {
+        margin-bottom: 20px;
+        /* Space between copyright and socials */
+    }
+
+    .socials {
+        justify-content: center;
+        /* Center social icons */
+        gap: 12px;
+        /* Adjust gap for smaller screens */
+    }
+
+    .socials img {
+        width: 30px;
+        /* Smaller icon size for mobile */
+
+    }
+
+    .copy-right p {
+        font-size: 13px;
+        /* Slightly smaller font size */
+    }
+}

@@ -1,102 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Page</title>
-    
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylei.css">
 </head>
+
 <body class="home-body">
     <header class="header-body">
-        <div><img src="src/images/Screenshot-2024-11-24-203638.png" alt="My-logo" width="100"></div>
+        <div>
+            <a href="index.html">
+                <img class="logo" src="src/images/Logo.svg" alt="My-logo" width="100">
+            </a>
+        </div>
         <div>Pixels and Passion</div>
-        <nav>
-            <label class="hamburger-menu" ><input type="checkbox"></label>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <div class="close-button" id="close-button">✖</div> <!-- Added close button -->
             <ul class="sidebar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="CV.html">Cv</a></li>
+                <li><a href="CV.html">CV</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="About-Me.html">About.me</a></li>
+                <li><a href="About-Me.html">About Me</a></li>
             </ul>
         </nav>
     </header>
     <main class="home-main">
         <article class="article">
-            <figure ><img src="src/images/Hero-Image-min.jpg" alt="Hero-image" class="hero-img" width="200" > <figcaption>Hero-image</figcaption></figure>
+            <figure>
+                <img src="src/images/Hero-Image-min.jpg" alt="Hero-image" class="hero-img">
+
+            </figure>
             <div class="Description-home-welcome">
-                <div><h3>Hello I'm Sumeya</h3></div>
-                <div><p>Welcome to my portfolio. I'm a passionate web developer, specializing in crafting elegant and functional digital experiences.If you want to collaborate and work with me please hit the button below</p></div>
-                <a href="Contact.html" style="
-                     background-color: rgb(44, 43, 43);
-                     border: 2px solid black;
-                     border-radius: 10px;
-                     padding: 10px 20px;
-                     text-decoration: none;
-                     color: white;
-                    ">
-                        Contact Info
-                </a>
-                
+                <h3>Hello I'm Sumeya</h3>
+                <p>Welcome to my portfolio. I'm a passionate web developer, specializing in crafting elegant and
+                    functional digital experiences. If you want to collaborate and work with me, please hit the button
+                    below.</p>
+                <a href="Contact.html" class="contact-button">Contact Me</a>
             </div>
         </article>
 
         <section class="home-projects">
             <div class="Description">
-                <div><h1><a href="projects.html">Projects</a></h1></div>
-                <div><p>Here are my latest projects, showcasing my skills in web development, design, and problem-solving. Each project highlights a unique approach and demonstrates my ability to create innovative and user-friendly digital solutions.</p></div>
+                <div>
+                    <h1><a href="projects.html">Projects</a></h1>
+                </div>
+                <div>
+                    <p>Here are my latest projects, showcasing my skills in web development, design, and
+                        problem-solving. Each project highlights a unique approach and demonstrates my ability to create
+                        innovative and user-friendly digital solutions.</p>
+                </div>
             </div>
 
             <div class="Projects-Preview">
-                <div class="item1">
-                    <a href="projects.html"><picture><img src="src/images/Projects-pictures/iced-latte-at-coffee-shop-window-min.jpg" alt="project-1" width="300" ></picture></a>
+                <div class="item">
+                    <a href="projects.html">
+                        <picture><img src="src/images/Projects-pictures/iced-latte-at-coffee-shop-window-min.jpg"
+                                alt="project-1" width="300"></picture>
+                    </a>
                     <div class="ProjectDp">
                         <h3>Project 1</h3>
-                        <p>Landing page for a cofee shop</p>
+                        <p>Landing page for a coffee shop</p>
                     </div>
                 </div>
-                <div class="item2">
-                    <a href="projects.html"><picture><img src="src/images/Projects-pictures/pexels-tara-winstead-8386440-min.jpg" alt="project-2" width="300"></picture> </a>
-                    <div  class="ProjectDp">
+                <div class="item">
+                    <a href="projects.html">
+                        <picture><img src="src/images/Projects-pictures/pexels-tara-winstead-8386440-min.jpg"
+                                alt="project-2" width="300"></picture>
+                    </a>
+                    <div class="ProjectDp">
                         <h3>Project 2</h3>
                         <p>AI-Study Assistant</p>
                     </div>
                 </div>
-                <div class="item3">
-                    <a href="projects.html"><picture><img src="src/images/Projects-pictures/roberto-cortese-ejhjSZKTeeg-unsplash-min.jpg" alt="project-3" width="300"></picture></a>
+                <div class="item">
+                    <a href="projects.html">
+                        <picture><img src="src/images/Projects-pictures/roberto-cortese-ejhjSZKTeeg-unsplash-min.jpg"
+                                alt="project-3" width="300"></picture>
+                    </a>
                     <div class="ProjectDp">
-                        <h3>Project3</h3>
-                        <p>E-commerce Site for an Modest clothing</p>
+                        <h3>Project 3</h3>
+                        <p>E-commerce Site for Modest Clothing</p>
                     </div>
                 </div>
-                <div class="item4">
-                    <a href="projects.html"><picture><img src="src/images/Projects-pictures/pexels-energepic-com-27411-159888-min.jpg" alt="project-4" width="300"></picture></a>
-                    <div class=" ProjectDp">
-                        <h3>Project4</h3>
-                        <p>Stock Market prediction</p>
+                <div class="item">
+                    <a href="projects.html">
+                        <picture><img src="src/images/Projects-pictures/pexels-energepic-com-27411-159888-min.jpg"
+                                alt="project-4" width="300"></picture>
+                    </a>
+                    <div class="ProjectDp">
+                        <h3>Project 4</h3>
+                        <p>Stock Market Prediction</p>
                     </div>
                 </div>
-                
             </div>
-            <div></div>
         </section>
     </main>
 
-    <footer class="home-footer">
+    <footer class="Contacts-footer">
         <div class="copy-right">
-            <p>&copy;  2024 Made by Sumeya Ibrahim. All rights reserved.</p>
+            <p>&copy; 2024 Made by Sumeya Ibrahim. All rights reserved.</p>
         </div>
-        <div><h4>Made with <span>Love</span></h4></div>
+        <div class="minimotto">
+            <p>Made with Love</p>
+        </div>
         <div class="socials">
-            <div><a href="https://www.linkedin.com/in/sumeya-issa-6ba350339?trk=contact-inf"><img src="src/images/ICons/linkedin-box-fill.svg" alt="Linkiden" width="100"></a></div>
-            <div><a href="https://www.instagram.com/poetic4_life/profilecard/?igsh=cnZqMHR1bWExaTRt"><img src="src/images/ICons/instagram-line.svg" alt="Instagram"  width="100"></a></div>
-            <div><a href="https://www.threads.net/@poetic4_life"><img src="src/images/ICons/twitter-line.svg" alt="Twitter"  width="100"></a></div>
-            <div><a href="https://t.me/poetic4life"><img src="src/images/ICons/telegram-line.svg" alt="Telegram"  width="100"></a></div>
-           
+            <div><a href="https://www.linkedin.com/in/sumeya-issa-6ba350339?trk=contact-inf"><img
+                        src="src/images/ICons/linkedin-box-fill.svg" alt="Linkiden" width="100"></a></div>
+            <div><a href="https://www.instagram.com/poetic4_life/profilecard/?igsh=cnZqMHR1bWExaTRt"><img
+                        src="src/images/ICons/instagram-line.svg" alt="Instagram" width="100"></a></div>
+            <div><a href="https://www.threads.net/@poetic4_life"><img src="src/images/ICons/twitter-line.svg"
+                        alt="Twitter" width="100"></a></div>
+            <div><a href="https://t.me/poetic4life"><img src="src/images/ICons/telegram-line.svg" alt="Telegram"
+                        width="100"></a></div>
         </div>
     </footer>
-   
 
-    
-
+    <script src="js/scripti.js"></script>
 </body>
+
 </html>

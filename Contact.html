@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylec.css">
+
 </head>
+
 <body class="Contact-body">
     <header class="contact-header">
-        <div><img src="src/images/Screenshot-2024-11-24-203638.png" alt="My-logo" width="100"></div>
+        <div>
+            <img class="logo" src="src/images/Logo.svg" alt="My-logo" width="100">
+        </div>
         <div>Pixels and Passion</div>
-        <nav>
-            <label class="hamburger-menu" ><input type="checkbox"></label>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-menu" id="nav-menu">
+            <div class="close-button" id="close-button">✖</div>
             <ul class="sidebar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="CV.html">Cv</a></li>
+                <li><a href="CV.html">CV</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="About-Me.html">About.me</a></li>
+                <li><a href="About-Me.html">About Me</a></li>
             </ul>
         </nav>
     </header>
@@ -24,81 +39,87 @@
     <main>
         <section class="contact-info-intro">
             <h3>Contact-Info</h3>
-            <p>Looking to collaborate or have a question? Feel free to reach out. I'm always open to new opportunities and love connecting with like-minded individuals</p>
+            <p>Looking to collaborate or have a question? Feel free to reach out. I'm always open to new opportunities
+                and love connecting with like-minded individuals</p>
             <audio controls>
                 <source src="src/audio/audio_2024-11-24_12-17-08.ogg" type="audio/mpeg">
                 Your browser does not support the audio element.
-              </audio>
+            </audio>
         </section>
-        <div class="contact-display"> 
-             <table>
+
+        <div class="contact-display">
+            <table>
                 <tr>
-                     <td>
+                    <td>
                         <a href="tel:+251940790416">
-                            <img src="src/images/ICons/phone-line.svg" alt="Phone-NUmber" width="200">
-                         </a>
+                            <img src="src/images/ICons/phone-line.svg" alt="Phone Number" width="200">
+                        </a>
                     </td>
                     <td>
                         <a href="https://www.instagram.com/poetic4_life/profilecard/?igsh=cnZqMHR1bWExaTRt">
-                         <img src="src/images/ICons/instagram-line.svg" alt="Instagram Account" width="200">
-                         </a>
+                            <img src="src/images/ICons/instagram-line.svg" alt="Instagram Account" width="200">
+                        </a>
                     </td>
                     <td>
-                        <a href="https://www.linkedin.com/in/sumeya-issa-6ba350339?trk=contact-inf" >
-                        <img src="src/images/ICons/linkedin-box-fill.svg" alt="Linkedin Account" width="200">
+                        <a href="https://www.linkedin.com/in/sumeya-issa-6ba350339?trk=contact-inf">
+                            <img src="src/images/ICons/linkedin-box-fill.svg" alt="LinkedIn Account" width="200">
                         </a>
                     </td>
                     <td>
                         <a href="https://t.me/poetic4life">
-                        <img src="src/images/ICons/telegram-line.svg" alt="Telegram Account" width="200">
+                            <img src="src/images/ICons/telegram-line.svg" alt="Telegram Account" width="200">
                         </a>
                     </td>
-                    </tr>
-                    <tr>
+                </tr>
+                <tr>
                     <td>
                         <a href="mailto:sumeyanur7@gmail.com">
-                        <img src="src/images/ICons/mail-line.svg" alt="Gmail Account" width="200">
+                            <img src="src/images/ICons/mail-line.svg" alt="Gmail Account" width="200">
                         </a>
                     </td>
                     <td>
                         <a href="https://github.com/nursu79">
-                        <img src="src/images/ICons/github-fill.svg" alt="Github Account" width="200">
+                            <img src="src/images/ICons/github-fill.svg" alt="GitHub Account" width="200">
                         </a>
                     </td>
                     <td>
                         <a href="https://discord.com/users/floral0007">
-                        <img src="src/images/ICons/discord-line.svg" alt="Discord Account" width="200">
+                            <img src="src/images/ICons/discord-line.svg" alt="Discord Account" width="200">
                         </a>
                     </td>
                     <td>
                         <a href="https://m.facebook.com/profile.php?id=100006443236129">
-                        <img src="src/images/ICons/facebook-circle-fill.svg" alt="Facebook Account">
+                            <img src="src/images/ICons/facebook-circle-fill.svg" alt="Facebook Account">
                         </a>
                     </td>
-                    </tr>
-                    
+                </tr>
             </table>
-
         </div>
     </main>
 
-    
+
     <footer class="Contacts-footer">
         <div class="copy-right">
-            <p>&copy;  2024 Made by Sumeya Ibrahim. All rights reserved.</p>
+            <p>&copy; 2024 Made by Sumeya Ibrahim. All rights reserved.</p>
         </div>
-        <div ><h4>Made with <span>Love</span></h4></div>
+        <div class="minimotto">
+            <p>Made with Love</p>
+        </div>
         <div class="socials">
-            <div><a href="https://www.linkedin.com/in/sumeya-issa-6ba350339?trk=contact-inf"><img src="src/images/ICons/linkedin-box-fill.svg" alt="Linkiden" width="100"></a></div>
-            <div><a href="https://www.instagram.com/poetic4_life/profilecard/?igsh=cnZqMHR1bWExaTRt"><img src="src/images/ICons/instagram-line.svg" alt="Instagram"  width="100"></a></div>
-            <div><a href="https://www.threads.net/@poetic4_life"><img src="src/images/ICons/twitter-line.svg" alt="Twitter"  width="100"></a></div>
-            <div><a href="https://t.me/poetic4life"><img src="src/images/ICons/telegram-line.svg" alt="Telegram"  width="100"></a></div>
+            <div><a href="https://www.linkedin.com/in/sumeya-issa-6ba350339?trk=contact-inf"><img
+                        src="src/images/ICons/linkedin-box-fill.svg" alt="Linkiden" width="100"></a></div>
+            <div><a href="https://www.instagram.com/poetic4_life/profilecard/?igsh=cnZqMHR1bWExaTRt"><img
+                        src="src/images/ICons/instagram-line.svg" alt="Instagram" width="100"></a></div>
+            <div><a href="https://www.threads.net/@poetic4_life"><img src="src/images/ICons/twitter-line.svg"
+                        alt="Twitter" width="100"></a></div>
+            <div><a href="https://t.me/poetic4life"><img src="src/images/ICons/telegram-line.svg" alt="Telegram"
+                        width="100"></a></div>
         </div>
     </footer>
-   
 
-    
 
+    <script src="js/scriptc.js"></script>
 
 </body>
+
 </html>
